@@ -105,3 +105,304 @@
 
         .logo {
             font-family: var(--font-serif);
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a:hover { color: var(--primary-accent); }
+
+        /* --- HERO --- */
+        .hero {
+            height: 85vh;
+            background: linear-gradient(rgba(26, 34, 40, 0.6), rgba(26, 34, 40, 0.6)), url('https://placehold.co/1920x1080/1A2228/FFF?text=Hero+Image:+Construction+Site+at+Dusk');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        /* --- BRIDGE SECTION --- */
+        .bridge {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+
+        .bridge-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .bridge-img img {
+            width: 100%;
+            height: auto;
+            box-shadow: 20px 20px 0px var(--secondary-bg);
+        }
+
+        /* --- CAPABILITIES --- */
+        .capabilities {
+            background-color: var(--secondary-bg);
+            padding: 100px 0;
+        }
+
+        .cap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .cap-card {
+            background: #fff;
+            padding: 40px;
+            transition: transform 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .cap-card:hover {
+            transform: translateY(-5px);
+            border-bottom: 3px solid var(--primary-accent);
+        }
+
+        .cap-icon {
+            font-size: 2rem;
+            color: var(--primary-accent);
+            margin-bottom: 20px;
+            font-family: var(--font-serif);
+        }
+
+        /* --- THE CRAFTSMAN DIFFERENCE --- */
+        .difference {
+            padding: 100px 0;
+            background-color: var(--primary-dark);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .difference h2 { color: #fff; }
+
+        .stat-grid {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item h3 {
+            font-size: 3.5rem;
+            color: var(--primary-accent);
+            margin-bottom: 0;
+        }
+
+        .stat-item p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #111;
+            color: #888;
+            padding: 60px 0 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer h4 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .footer ul li { margin-bottom: 10px; }
+        .footer ul li a:hover { color: var(--primary-accent); }
+
+        .copyright {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .bridge-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; } /* Simple hide for mobile demo */
+            .stat-grid { gap: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">JOSEY CONSTRUCTION</div>
+                <ul class="nav-links">
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#capabilities">Capabilities</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" style="color: var(--primary-accent);">Subcontractor Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Built on Principle.<br><span class="gold-text">Constructed for Life.</span></h1>
+            <p class="text-light" style="font-size: 1.2rem;">The team you know, the craftsmanship you trust—now building the future of Sumter.</p>
+            <div style="margin-top: 30px;">
+                <a href="#capabilities" class="btn">View Capabilities</a>
+                <a href="#contact" class="btn btn-outline" style="margin-left: 15px;">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bridge" id="about">
+        <div class="container">
+            <div class="bridge-grid">
+                <div class="bridge-text">
+                    <h5>OUR HERITAGE</h5>
+                    <h2>50 Years of Experience.<br>One New Standard.</h2>
+                    <p>For years, we have served South Carolina families as <strong>Banjo Properties</strong>, delivering homes that stand apart from the "mega-builders."</p>
+                    <p>Now, as <strong>Josey Construction</strong>, we are bringing that same dedication to in-house craftsmanship and detail-oriented project management to larger-scale residential and commercial projects. </p>
+                    <p>We don't just manage spreadsheets—we know the trade. Same hands, broader horizons.</p>
+                </div>
+                <div class="bridge-img">
+                    <img src="https://placehold.co/600x400/C5A059/white?text=Founder+Portrait+on+Jobsite" alt="Josey Construction Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="capabilities" id="capabilities">
+        <div class="container">
+            <div class="text-center">
+                <h5>WHAT WE BUILD</h5>
+                <h2>Our Capabilities</h2>
+                <div style="width: 60px; height: 3px; background: var(--primary-accent); margin: 0 auto;"></div>
+            </div>
+            
+            <div class="cap-grid">
+                <div class="cap-card">
+                    <div class="cap-icon">01</div>
+                    <h3>Custom Residential</h3>
+                    <p>From spec homes to full custom builds, we design for the family, not the market. We bring "forever home" quality to every build.</p>
+                </div>
+
+                <div class="cap-card">
+                    <div class="cap-icon">02</div>
+                    <h3>Major Renovations</h3>
+                    <p>Additions, kitchens, and whole-home transformations. We respect the original structure while breathing new life into Sumter's history.</p>
+                </div>
+
+                <div class="cap-card">
+                    <div class="cap-icon">03</div>
+                    <h3>Commercial Upfit</h3>
+                    <p>Bringing residential finish quality to the commercial sector. We handle complex timelines and commercial requirements with precision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="difference">
+        <div class="container">
+            <h2>The Craftsman's Difference</h2>
+            <p style="max-width: 700px; margin: 0 auto; opacity: 0.9;">
+                In an era of production deadlines, Josey Construction stands firm on a simple promise: <strong>We Build It.</strong> 
+                Our in-house craftsmen ensure that critical details are executed by hands we trust.
+            </p>
+            
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Years Combined Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Quality Focused</p>
+                </div>
+                <div class="stat-item">
+                    <h3>SC</h3>
+                    <p>Locally Owned & Operated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bridge" id="projects">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <h2>Recent Projects</h2>
+            </div>
+            <div class="bridge-grid">
+                <img src="https://placehold.co/600x400/EEE/333?text=Custom+Home+Build" alt="Project 1">
+                <img src="https://placehold.co/600x400/EEE/333?text=Commercial+Upfit" alt="Project 2">
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#" class="btn">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>JOSEY CONSTRUCTION</h4>
+                    <p>Building legacy through integrity, safety, and craftsmanship.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul style="color: #aaa;">
+                        <li>PO Box 82, Dalzell SC 29040</li>
+                        <li>(803) 651-9783</li>
+                        <li>BanjoSumter@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Subcontractor Portal</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="https://www.banjopropertiesllc.com/">Banjo Properties LLC</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Josey Construction. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
