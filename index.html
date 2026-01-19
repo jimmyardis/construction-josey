@@ -34,6 +34,13 @@
             background-color: #fff;
         }
 
+        /* --- ADDED THIS RULE TO FIX IMAGE SIZING --- */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
         a { text-decoration: none; color: inherit; transition: 0.3s; }
         ul { list-style: none; }
 
@@ -125,7 +132,7 @@
         /* --- HERO --- */
         .hero {
             height: 85vh;
-            /* Real Image: Construction site at dusk/golden hour */
+            /* Construction Site at Dusk */
             background: linear-gradient(rgba(26, 34, 40, 0.6), rgba(26, 34, 40, 0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -366,8 +373,15 @@
                 <h2>Recent Projects</h2>
             </div>
             <div class="bridge-grid">
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop" alt="Infill Project Construction">
-                <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1000&auto=format&fit=crop" alt="Affordable Housing Project">
+                
+                <div class="bridge-img">
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1000&auto=format&fit=crop" alt="Infill Project">
+                </div>
+
+                <div class="bridge-img">
+                    <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=1000&auto=format&fit=crop" alt="Custom Southern Home">
+                </div>
+
             </div>
             <div class="text-center" style="margin-top: 40px;">
                 <a href="#" class="btn">View Full Portfolio</a>
@@ -382,28 +396,4 @@
                     <h4>JOSEY CONSTRUCTION</h4>
                     <p>Building legacy through integrity, safety, and community revitalization.</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul style="color: #aaa;">
-                    
-                        <li>(803)236-9515</li>
-                        <li>joseyconst@yahoo.com</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Subcontractor Portal</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Vendor Application</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Josey Construction. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                <div class="footer-col
