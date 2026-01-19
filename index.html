@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josey Construction | Sumter, SC</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- VARIABLES & RESET --- */
+        :root {
+            --primary-dark: #1A2228; /* Deep Charcoal/Navy - JHL Trust */
+            --primary-accent: #C5A059; /* Burnished Gold - Castle Luxury */
+            --secondary-bg: #F5F5F0; /* Warm Cream */
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 700;
+        }
+
+        h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; }
+        h2 { font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--primary-dark); }
+        h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+        p { margin-bottom: 1.5rem; font-weight: 300; }
+
+        .text-center { text-align: center; }
+        .text-light { color: var(--text-light); }
+        .gold-text { color: var(--primary-accent); }
+
+        /* --- UTILITIES --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: var(--primary-accent);
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            border: 1px solid var(--primary-accent);
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--primary-accent);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--primary-dark);
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: var(--primary-dark);
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
