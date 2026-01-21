@@ -159,16 +159,23 @@
             align-items: start;
         }
 
+        /* Styling for the Vertical Stack (House over Interior) */
+        .project-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between Exterior and Interior */
+        }
+
         .bridge-img img {
             width: 100%;
             height: auto;
             box-shadow: 10px 10px 0px var(--secondary-bg);
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         /* --- PROJECT SPECIFIC STYLES --- */
         .project-category {
-            margin-bottom: 80px;
+            margin-bottom: 100px; /* More space between sections */
         }
 
         .project-category h3 {
@@ -389,6 +396,35 @@
             </div>
 
             <div class="project-category">
+                <h3>Featured New Construction</h3>
+                <div class="bridge-grid">
+                    
+                    <div class="project-column">
+                        <div class="bridge-img">
+                            <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/whiteext" alt="White House Exterior">
+                            <p style="font-size: 0.9rem; margin-top: 5px; color: #666; font-weight: 600;">Custom Estate Exterior</p>
+                        </div>
+                        <div class="bridge-img">
+                            <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/whiteint" alt="White House Interior">
+                            <p style="font-size: 0.9rem; margin-top: 5px; color: #666;">Interior Finishes</p>
+                        </div>
+                    </div>
+
+                    <div class="project-column">
+                        <div class="bridge-img">
+                            <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brickext" alt="Brick House Exterior">
+                            <p style="font-size: 0.9rem; margin-top: 5px; color: #666; font-weight: 600;">Traditional Brick Facade</p>
+                        </div>
+                        <div class="bridge-img">
+                            <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brickint" alt="Brick House Interior">
+                            <p style="font-size: 0.9rem; margin-top: 5px; color: #666;">Modern Open Layout</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-category">
                 <h3>Renovation Spotlight: Major Remodel</h3>
                 <p style="margin-bottom: 20px;">Transforming spaces while respecting the structure.</p>
                 <div style="margin-bottom: 40px;">
@@ -397,35 +433,7 @@
             </div>
 
             <div class="project-category">
-                <h3>Featured Project: Custom Southern Estate</h3>
-                <div class="bridge-grid">
-                    <div class="bridge-img">
-                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/whiteext" alt="White House Exterior">
-                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Exterior Elevation</p>
-                    </div>
-                    <div class="bridge-img">
-                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/whiteint" alt="White House Interior">
-                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Interior Finishes</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-category">
-                <h3>Featured Project: Infill Development</h3>
-                <div class="bridge-grid">
-                    <div class="bridge-img">
-                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brickext" alt="Brick House Exterior">
-                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Traditional Brick Facade</p>
-                    </div>
-                    <div class="bridge-img">
-                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brickint" alt="Brick House Interior">
-                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Modern Interior Layout</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-category">
-                <h3>More Recent Builds</h3>
+                <h3>Additional Projects</h3>
                 <div class="bridge-grid">
                     <div class="bridge-img">
                         <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brick2ext" alt="Brick House 2">
