@@ -34,7 +34,7 @@
             background-color: #fff;
         }
 
-        /* --- ADDED THIS RULE TO FIX IMAGE SIZING --- */
+        /* Essential Image Sizing Rule */
         img {
             max-width: 100%;
             height: auto;
@@ -132,7 +132,6 @@
         /* --- HERO --- */
         .hero {
             height: 85vh;
-            /* Construction Site at Dusk */
             background: linear-gradient(rgba(26, 34, 40, 0.6), rgba(26, 34, 40, 0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -156,14 +155,29 @@
         .bridge-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
+            gap: 40px;
+            align-items: start;
         }
 
         .bridge-img img {
             width: 100%;
             height: auto;
-            box-shadow: 20px 20px 0px var(--secondary-bg);
+            box-shadow: 10px 10px 0px var(--secondary-bg);
+            margin-bottom: 10px;
+        }
+
+        /* --- PROJECT SPECIFIC STYLES --- */
+        .project-category {
+            margin-bottom: 80px;
+        }
+
+        .project-category h3 {
+            border-left: 4px solid var(--primary-accent);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
         }
 
         /* --- CAPABILITIES --- */
@@ -369,22 +383,61 @@
 
     <section class="bridge" id="projects">
         <div class="container">
-            <div class="text-center" style="margin-bottom: 50px;">
-                <h2>Recent Projects</h2>
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2>Our Work</h2>
+                <p>From the foundation up, or the studs out.</p>
             </div>
-            <div class="bridge-grid">
-                
-                <div class="bridge-img">
-                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1000&auto=format&fit=crop" alt="Infill Project">
-                </div>
 
-                <div class="bridge-img">
-                    <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=1000&auto=format&fit=crop" alt="Custom Southern Home">
+            <div class="project-category">
+                <h3>Renovation Spotlight: Major Remodel</h3>
+                <p style="margin-bottom: 20px;">Transforming spaces while respecting the structure.</p>
+                <div style="margin-bottom: 40px;">
+                    <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/b4aft" alt="Kitchen Remodel Comparison" style="width: 100%; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                 </div>
-
             </div>
+
+            <div class="project-category">
+                <h3>Featured Project: Custom Southern Estate</h3>
+                <div class="bridge-grid">
+                    <div class="bridge-img">
+                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/whiteext" alt="White House Exterior">
+                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Exterior Elevation</p>
+                    </div>
+                    <div class="bridge-img">
+                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/whiteint" alt="White House Interior">
+                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Interior Finishes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category">
+                <h3>Featured Project: Infill Development</h3>
+                <div class="bridge-grid">
+                    <div class="bridge-img">
+                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brickext" alt="Brick House Exterior">
+                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Traditional Brick Facade</p>
+                    </div>
+                    <div class="bridge-img">
+                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brickint" alt="Brick House Interior">
+                        <p style="font-size: 0.9rem; margin-top: 10px; color: #666;">Modern Interior Layout</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category">
+                <h3>More Recent Builds</h3>
+                <div class="bridge-grid">
+                    <div class="bridge-img">
+                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/brick2ext" alt="Brick House 2">
+                    </div>
+                    <div class="bridge-img">
+                        <img src="https://github.com/jimmyardis/construction-josey/raw/refs/heads/main/white2ext" alt="White House 2">
+                    </div>
+                </div>
+            </div>
+
             <div class="text-center" style="margin-top: 40px;">
-                <a href="#" class="btn">View Full Portfolio</a>
+                <a href="#contact" class="btn">Start Your Project</a>
             </div>
         </div>
     </section>
@@ -396,4 +449,28 @@
                     <h4>JOSEY CONSTRUCTION</h4>
                     <p>Building legacy through integrity, safety, and community revitalization.</p>
                 </div>
-                <div class="footer-col
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul style="color: #aaa;">
+                        <li>PO Box 82, Dalzell SC 29040</li>
+                        <li>(803) 651-9783</li>
+                        <li>BanjoSumter@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Subcontractor Portal</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Vendor Application</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Josey Construction. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
